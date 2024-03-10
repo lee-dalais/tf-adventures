@@ -13,3 +13,6 @@ crash.*.log
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+.idea
+*.DS_Store
