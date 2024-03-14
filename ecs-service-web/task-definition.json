@@ -1,0 +1,23 @@
+[{
+  "command": [],
+  "entryPoint": [],
+  "essential": true,
+  "image": "!!REPLACE_ME!!",
+  "name": "web-app",
+  "portMappings": [
+    {
+      "containerPort": 80,
+      "hostPort": 80,
+      "protocol": "tcp"
+    }
+  ],
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "/aws/fargate/container1",
+      "awslogs-region": "us-west-2",
+      "awslogs-create-group": "true",
+      "awslogs-stream-prefix": "nginx"
+    }
+  }
+}]
